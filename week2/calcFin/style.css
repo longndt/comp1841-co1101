@@ -1,0 +1,14 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#result{
+    background-color: lightgreen;
+}
+#form{
+    background-color: rgb(210, 198, 183);
+}
+
+#error{
+    background-color: rgb(183, 181, 181);
+    color: red;
+}
