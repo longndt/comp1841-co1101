@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2023 at 07:18 AM
+-- Generation Time: Oct 19, 2023 at 02:47 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,19 +31,17 @@ CREATE TABLE `joke` (
   `id` int(11) NOT NULL,
   `joketext` text NOT NULL,
   `jokedate` date NOT NULL,
-  `jokeimage` varchar(50) NOT NULL,
-  `photo` blob NOT NULL,
-  `video` varchar(20) NOT NULL
+  `image` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `joke`
 --
 
-INSERT INTO `joke` (`id`, `joketext`, `jokedate`, `jokeimage`, `photo`, `video`) VALUES
-(1, 'this is just a joke', '2023-10-02', 'chicken.png', '', 'srlBwxXLyhk'),
-(4, 'just another joke', '2023-10-05', 'doctor.png', '', '22gYehUqRrI'),
-(5, 'new joke', '2023-10-27', 'knocker.jpg', '', '');
+INSERT INTO `joke` (`id`, `joketext`, `jokedate`, `image`) VALUES
+(1, 'this is just a joke', '2023-10-02', 'chicken.png'),
+(4, 'just another joke', '2023-10-05', 'doctor.png'),
+(5, 'new joke', '2023-10-27', 'knocker.jpg');
 
 --
 -- Indexes for dumped tables
