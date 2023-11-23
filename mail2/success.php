@@ -1,0 +1,1 @@
+<h1>Thank you. Your message has been sent !</h1>
