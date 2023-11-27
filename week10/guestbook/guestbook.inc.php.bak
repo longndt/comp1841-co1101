@@ -1,0 +1,21 @@
+<?php
+ 
+ function add_post($message){
+ 	$message = htmlentities($message, ENT_COMPAT, 'UTF-8');
+ 	$message = mysql_real_escape_string($message);
+
+ 	mysql_query("INSERT INTO posts (post_body) VALUES ('$message')");
+ }
+
+function fetch_posts(){
+	$result = mysql_query("SELECT post_body FROM posts");
+
+	$posts = array();
+
+	while (($row = mysql_fetch_assoc($result)) !== false) {
+		$posts[] = $row['post_body'];
+	
+	}
+	return $posts;
+}
+?> 
